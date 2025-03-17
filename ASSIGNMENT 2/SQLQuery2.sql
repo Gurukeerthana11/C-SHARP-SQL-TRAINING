@@ -39,5 +39,22 @@ values
     (7934, 'MILLER', 'CLERK', 7782, '1982-01-23', 1300, null, 10);
 select*from emp;
 select * from dept;
+select * from emp where ename like 'A%';
+select * from emp where mgr_id is null;
+select ename,empno,sal from emp where sal >=1200 and sal<=1400;
+select count(*) as "Number of Clerks Employed" from emp where job = 'clerk';
+select avg(sal) as "avgsalary of clerk" from emp where job='clerk' ;
+select avg(sal) as "avgsalary of salesman" from emp where job='salesman' ;
+select avg(sal) as "avgsalary of manager" from emp where job='manager' ;
+select avg(sal) as "avgsalary of analyst" from emp where job='analyst' ;
+select avg(sal) as "avgsalary of president" from emp where job='president' ;
+select ename from emp where sal=(select max(sal) from emp);
+select ename from emp where sal=(select min(sal) from emp);
+select * from dept where deptno not in (select distinct deptno from emp);
+select ename,sal from emp where job='analyst' and sal>1200 and deptno='20' order by ename asc;
+select sal from emp where ename in ('miller','smith');
+select ename from emp where ename like 'A%' or ename like 'M%';
+select ename, sal * 12 from emp where ename = 'smith';
+select ename, sal from emp where sal not between 1500 and 2850;
 
 
