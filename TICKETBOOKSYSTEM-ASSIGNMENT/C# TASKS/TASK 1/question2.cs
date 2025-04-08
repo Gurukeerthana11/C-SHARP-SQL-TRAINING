@@ -1,4 +1,6 @@
-﻿namespace question2
+//2. Use conditional statements (if-else) to determine if the ticket is available or not.
+
+namespace question2
 {
     internal class Program
     {
