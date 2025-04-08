@@ -29,8 +29,6 @@ o venue_name,
 o address 
 • Methods and Constuctors: 
 o display_venue_details(): Display venue details. 
-www.hexaware.com 
-© Hexaware Technologies Limited. All rights 
 o Implement default constructors and overload the constructor with Customer 
 attributes, generate getter and setter methods. 
 3. Customer Class 
@@ -51,60 +49,7 @@ o book_tickets(num_tickets): Book a specified number of tickets for an event.
 o cancel_booking(num_tickets): Cancel the booking and update the available seats. 
 o getAvailableNoOfTickets(): return the total available tickets 
 o getEventDetails(): return event details from the event class 
-Task 5: Inheritance and polymorphism 
-1. Inheritance 
-• Create a subclass Movie that inherits from Event. Add the following attributes and methods: 
-o Attributes: 
-1. genre: Genre of the movie (e.g., Action, Comedy, Horror). 
-2. ActorName 
-3. ActresName 
-o Methods: 
-1. Implement default constructors and overload the constructor with Customer 
-attributes, generate getter and setter methods. 
-2. display_event_details(): Display movie details, including genre. 
-• Create another subclass Concert that inherits from Event. Add the following attributes and 
-methods: 
-o Attributes: 
-1. artist: Name of the performing artist or band. 
-2. type: (Theatrical, Classical, Rock, Recital) 
-o Methods: 
-1. Implement default constructors and overload the constructor with Customer 
-attributes, generate getter and setter methods. 
-2. display_concert_details(): Display concert details, including the artist. 
-• Create another subclass Sports that inherits from Event. Add the following attributes and 
-methods: 
-o Attributes: 
-Task 6: Abstraction 
-Requirements: 
-1. sportName: Name of the game. 
-2. teamsName: (India vs Pakistan) 
-o Methods: 
-1. Implement default constructors and overload the constructor with Customer 
-attributes, generate getter and setter methods. 
-2. display_sport_details(): Display concert details, including the artist. 
-• Create a class TicketBookingSystem with the following methods:  
-o create_event(event_name: str, date:str, time:str, total_seats: int, ticket_price: 
-f
- loat, event_type: str, venu_name:str): Create a new event with the specified details 
-and event type (movie, sport or concert) and return event object.  
-o display_event_details(event: Event): Accepts an event object and calls its 
-display_event_details() method to display event details. 
-o book_tickets(event: Event, num_tickets: int):  
-1. Accepts an event object and the number of tickets to be booked. 
-2. Checks if there are enough available seats for the booking. 
-3. If seats are available, updates the available seats and returns the total cost 
-of the booking. 
-4. If seats are not available, displays a message indicating that the event is sold 
-out. 
-o cancel_tickets(event: Event, num_tickets): cancel a specified number of tickets for 
-an event. 
-o main(): simulates the ticket booking system 
-1. User can book tickets and view the event details as per their choice in menu 
-(movies, sports, concerts). 
-2. Display event details using the display_event_details() method without 
-knowing the specific event type (demonstrate polymorphism). 
-3. Make bookings using the book_tickets() and cancel tickets cancel_tickets() 
-method.*/
+*/
 
 
 using System;
