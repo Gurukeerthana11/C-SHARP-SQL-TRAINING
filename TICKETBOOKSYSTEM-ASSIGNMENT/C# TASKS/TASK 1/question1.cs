@@ -1,4 +1,8 @@
-﻿namespace question1
+/*task1 :Conditional Statements In a BookingSystem, you have been given the task is to create a program to book tickets. 
+if available t ickets more than noOfTicket to book then display the remaining tickets or ticket unavailable: */
+
+
+namespace question1
 {
     internal class Program
     {
